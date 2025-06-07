@@ -34,7 +34,7 @@ def frequeny_of_nonoverlapping_bigrams(text, alphabet, matrix):
             matrix[i1][i2] += 1
 
 def fill_matrix(matrix, alphabet):
-    width = 5
+    width = 6
     result = " " * width + "".join(f"{ch:>{width}}" for ch in alphabet) + "\n"
     for i, j in enumerate(matrix):
         result += f"{alphabet[i]:<{width}}" + "".join(f"{count:>{width}}" for count in j) + "\n"
